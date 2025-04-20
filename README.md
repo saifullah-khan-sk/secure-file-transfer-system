@@ -13,11 +13,11 @@ A secure, GUI-based file transfer and messaging system implemented in Python, de
 
 ## 🏗️ Project Structure
 
-# **client.py**: GUI client to send encrypted files/messages 
-# **server.py**: GUI server to receive files and handle decryption 
-# **keygen.py**: Generates RSA key pair for secure AES key encryption 
-# **encryptor.py**: Standalone script to encrypt a file with RSA + AES 
-# **decryptor.py**: Standalone script to decrypt files using private RSA key 
+- **client.py**: GUI client to send encrypted files/messages 
+- **server.py**: GUI server to receive files and handle decryption 
+- **keygen.py**: Generates RSA key pair for secure AES key encryption 
+- **encryptor.py**: Standalone script to encrypt a file with RSA + AES 
+- **decryptor.py**: Standalone script to decrypt files using private RSA key 
 
 
 ## 🧪 How It Works
@@ -37,7 +37,7 @@ A secure, GUI-based file transfer and messaging system implemented in Python, de
 - Python 3.7+
 
 # Libraries
--pycryptodome
--cryptography
--tkinter
+- pycryptodome
+- cryptography
+- tkinter
 
