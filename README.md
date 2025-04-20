@@ -11,9 +11,33 @@ A secure, GUI-based file transfer and messaging system implemented in Python, de
 - 🗃️ **Server File Management**: Server displays a list of received files and allows secure downloads with passphrase verification.
 - 🔐 **Password-Protected ZIP**: Downloaded files are saved in password-protected ZIP format for additional security.
 
-client.py # GUI client to send encrypted files/messages 
-server.py # GUI server to receive files and handle decryption 
-keygen.py # Generates RSA key pair for secure AES key encryption 
-encryptor.py # Standalone script to encrypt a file with RSA + AES 
-decryptor.py # Standalone script to decrypt files using private RSA key 
+## 🏗️ Project Structure
+
+# **client.py**: GUI client to send encrypted files/messages 
+# **server.py**: GUI server to receive files and handle decryption 
+# **keygen.py**: Generates RSA key pair for secure AES key encryption 
+# **encryptor.py**: Standalone script to encrypt a file with RSA + AES 
+# **decryptor.py**: Standalone script to decrypt files using private RSA key 
+
+
+## 🧪 How It Works
+
+1. **Client Side**
+   - User logs in with username/password and sets a decryption passphrase.
+   - The passphrase is used to derive a key via PBKDF2 for encrypting the AES key.
+   - The file is encrypted with a random AES key, and that key is encrypted using the derived key.
+   - Encrypted file and key metadata are sent to the server.
+
+2. **Server Side**
+   - Accepts file uploads and records sender info.
+   - Upon download request, asks for the correct passphrase to decrypt the AES key.
+   - The decrypted file is saved into a password-protected ZIP.
+
+## Requirements
+- Python 3.7+
+
+# Libraries
+-pycryptodome
+-cryptography
+-tkinter
 
