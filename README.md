@@ -11,4 +11,9 @@ A secure, GUI-based file transfer and messaging system implemented in Python, de
 - 🗃️ **Server File Management**: Server displays a list of received files and allows secure downloads with passphrase verification.
 - 🔐 **Password-Protected ZIP**: Downloaded files are saved in password-protected ZIP format for additional security.
 
-├── client.py # GUI client to send encrypted files/messages ├── server.py # GUI server to receive files and handle decryption ├── keygen.py # Generates RSA key pair for secure AES key encryption ├── encryptor.py # Standalone script to encrypt a file with RSA + AES ├── decryptor.py # Standalone script to decrypt files using private RSA key ├── files/ # Directory for storing encrypted files ├── keys/ # RSA key storage (public/private)
+client.py # GUI client to send encrypted files/messages 
+server.py # GUI server to receive files and handle decryption 
+keygen.py # Generates RSA key pair for secure AES key encryption 
+encryptor.py # Standalone script to encrypt a file with RSA + AES 
+decryptor.py # Standalone script to decrypt files using private RSA key 
+
