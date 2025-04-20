@@ -36,7 +36,7 @@ A secure, GUI-based file transfer and messaging system implemented in Python, de
 ## Requirements
 - Python 3.7+
 
-# Libraries
+## Libraries
 - pycryptodome
 - cryptography
 - tkinter
